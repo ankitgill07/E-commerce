@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.animate {
+    animation-name: shimmer;
+    background-image: linear-gradient(to right, #eeeeee, #fcfcfc, #fafafa, #f7f7f7, #f5f5f5aa, #f4f4f4, #f0f0f0, #ededed, #efefef, #e5e5e5, #efefef, #f1f1f1);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: -1000px 0;
+    }
+
+    to {
+        /* background-color:; */
+        background-position: 1000px 0;
+    }
+}
